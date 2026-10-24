@@ -1,0 +1,1222 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <link rel="icon" type="image/png" href="data:image/png;base64,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" />
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Club Natties 2026 Pool Play FanMap++</title>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-8ZMT2PYKSW"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-8ZMT2PYKSW');
+  </script>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap');
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: #f3f6f9;
+      color: #0f172a;
+      scroll-behavior: smooth;
+    }
+
+    /* Map container styling matching Surf Cup Sports Park base graphic */
+    .surf-map-bg {
+      background-color: #9ec3d6;
+      border: 2px solid #5a8aa3;
+    }
+
+    .parking-bar {
+      background-color: #0f172a;
+    }
+
+    .hq-bar {
+      background-color: #0f172a;
+    }
+
+    .field-card {
+      background-color: #ffffff;
+      border: 2px solid #0f172a;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      aspect-ratio: 1 / 2.25;
+      box-shadow: 0 1px 2px rgba(0,0,0,0.08);
+      cursor: pointer;
+      transition: transform 0.1s ease, box-shadow 0.1s ease;
+    }
+    .field-card:hover {
+      transform: translateY(-1px);
+      box-shadow: 0 4px 6px rgba(0,0,0,0.14);
+    }
+    .field-card:active {
+      transform: scale(0.98);
+    }
+
+    .field-slot-top {
+      height: 29%;
+      border-bottom: 1.5px solid #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 1px;
+    }
+
+    .field-slot-mid {
+      height: 42%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      position: relative;
+      background-color: #ffffff;
+    }
+
+    .field-slot-bot {
+      height: 29%;
+      border-top: 1.5px solid #0f172a;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      overflow: hidden;
+      padding: 1px;
+    }
+
+    /* Distinct blue border for Field Pass fields (3, 4, 12, 13) */
+    .field-card.field-pass-border {
+      border: 2.5px solid #0a14e6;
+    }
+    .field-card.field-pass-border .field-slot-top {
+      border-bottom: 1.5px solid #0a14e6;
+    }
+    .field-card.field-pass-border .field-slot-bot {
+      border-top: 1.5px solid #0a14e6;
+    }
+    .field-card.field-pass-border .field-num-circle {
+      border-color: #0a14e6;
+      color: #0a14e6;
+    }
+
+    /* Distinct red border for Showcase field (5) */
+    .field-card.showcase-border {
+      border: 2.5px solid #dc2626;
+    }
+    .field-card.showcase-border .field-slot-top {
+      border-bottom: 1.5px solid #dc2626;
+    }
+    .field-card.showcase-border .field-slot-bot {
+      border-top: 1.5px solid #dc2626;
+    }
+    .field-card.showcase-border .field-num-circle {
+      border-color: #dc2626;
+      color: #dc2626;
+    }
+
+    .field-num-circle {
+      width: 36px;
+      height: 36px;
+      border-radius: 9999px;
+      border: 2.5px solid #216083;
+      color: #0f172a;
+      font-weight: 900;
+      font-size: 1.05rem;
+      letter-spacing: -0.03em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      line-height: 1;
+      background: #ffffff;
+      z-index: 2;
+    }
+
+    @media (max-width: 640px) {
+      .field-num-circle {
+        width: 25px;
+        height: 25px;
+        font-size: 0.78rem;
+        border-width: 2px;
+      }
+    }
+
+    /* Vertical El Camino Real text */
+    .vertical-road {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      letter-spacing: 0.14em;
+      color: #b85d57;
+      font-weight: 800;
+    }
+
+    .vertical-side-label {
+      writing-mode: vertical-rl;
+      transform: rotate(180deg);
+      color: #b85d57;
+      font-weight: 800;
+      font-size: 0.55rem;
+      letter-spacing: 0.08em;
+    }
+
+    /* Print / Save One-Page Styles */
+    @media print {
+      @page {
+        size: letter portrait;
+        margin: 0.25in;
+      }
+      body {
+        background: #ffffff !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print {
+        display: none !important;
+      }
+      .print-container {
+        display: grid !important;
+        grid-template-columns: 62% 36% !important;
+        gap: 2% !important;
+        max-width: 100% !important;
+        padding: 0 !important;
+        margin: 0 !important;
+      }
+      .round-map-wrapper {
+        margin-bottom: 8px !important;
+        page-break-inside: avoid;
+      }
+    }
+  </style>
+</head>
+<body id="top" class="min-h-screen pb-16">
+
+  <!-- TOP HEADER BANNER (Not sticky on mobile so it doesn't eat screen space; sticky on desktop) -->
+  <header class="bg-white border-b-2 border-slate-800 md:sticky md:top-0 z-40 shadow-sm">
+    <div class="max-w-7xl mx-auto px-3 sm:px-6 py-2.5 flex flex-wrap items-center justify-between gap-3">
+      <!-- Logo & Title -->
+      <div class="flex items-center gap-3">
+        <div class="flex flex-col items-center leading-none select-none">
+          <span class="text-[11px] font-black tracking-tighter text-blue-900">ULTIMANS</span>
+          <div class="w-16 h-3.5 relative flex items-center">
+            <span class="w-5 h-2.5 rounded-full border-2 border-blue-900 bg-white inline-block z-10"></span>
+            <span class="h-1.5 flex-1 bg-gradient-to-r from-red-600 to-blue-800 -ml-1 rounded-r"></span>
+          </div>
+        </div>
+        <div>
+          <h1 class="text-lg sm:text-2xl font-extrabold tracking-tight text-slate-900">
+            Club Natties 2026 Pool Play FanMap++
+          </h1>
+          <p class="text-xs text-slate-500 font-semibold sm:hidden">Surf Cup Sports Park • San Diego, CA</p>
+        </div>
+      </div>
+
+      <!-- Action Buttons -->
+      <div class="flex items-center gap-2 no-print">
+        <div class="flex items-center gap-2 no-print bg-slate-200 p-1 rounded-lg">
+        <button id="tab-friday" onclick="switchDay('friday')" class="px-3 py-1.5 rounded-md text-xs font-bold shadow-sm transition bg-blue-900 text-white">
+          Fri (Pools)
+        </button>
+        <button id="tab-saturday" onclick="switchDay('saturday_preq')" class="px-3 py-1.5 rounded-md text-xs font-bold transition text-slate-600 hover:text-slate-900">
+          Sat (PreQuarters)
+        </button>
+      </div>
+
+        <button onclick="window.print()" class="inline-flex items-center gap-1.5 px-3 py-1.5 rounded-lg bg-emerald-700 hover:bg-emerald-800 text-white text-xs font-bold shadow transition" title="Print or Save as Single-Page PDF">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+            <path stroke-linecap="round" stroke-linejoin="round" d="M6 9V2h12v7M6 18H4a2 2 0 01-2-2v-5a2 2 0 012-2h16a2 2 0 012 2v5a2 2 0 01-2 2h-2m-12 0h12v4H6v-4z"/>
+          </svg>
+          <span class="hidden sm:inline">Print / Save View</span>
+        </button>
+      </div>
+    </div>
+
+    <!-- TEAM SELECTOR CONTROLS BAR (Scrolls away on mobile, sticky on desktop) -->
+    <div id="teamSelectorBar" class="bg-slate-100 border-t border-slate-200 px-3 sm:px-6 py-2 no-print">
+      <div class="max-w-7xl mx-auto flex flex-wrap items-center justify-between gap-2">
+        
+        <!-- Left: Search + Division Dropdown + Add Team -->
+        <div class="flex flex-wrap items-center gap-2 flex-1 min-w-[260px]">
+          <!-- Division Filter -->
+          <select id="divisionFilter" onchange="populateDropdown()" class="text-xs font-bold bg-white border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-800 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <option value="ALL">All Divisions (48 Teams)</option>
+            <option value="W">Women's Division (16)</option>
+            <option value="M">Men's Division (16)</option>
+            <option value="X">Mixed Division (16)</option>
+          </select>
+
+          <!-- Searchable Input + Dropdown -->
+          <div class="relative flex-1 max-w-xs">
+            <input
+              type="text"
+              id="teamSearchInput"
+              oninput="handleSearchInput()"
+              onfocus="showSearchResults()"
+              placeholder="Search or pick a team to add..."
+              class="w-full text-xs font-semibold bg-white border border-slate-300 rounded-lg pl-8 pr-3 py-1.5 focus:outline-none focus:ring-2 focus:ring-blue-600"
+            />
+            <svg class="w-3.5 h-3.5 text-slate-400 absolute left-2.5 top-2" fill="none" stroke="currentColor" stroke-width="2" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"/>
+            </svg>
+            <!-- Search Dropdown Menu -->
+            <div id="searchResultsMenu" class="hidden absolute left-0 right-0 mt-1 max-h-64 overflow-y-auto bg-white border border-slate-300 rounded-lg shadow-xl z-50 divide-y divide-slate-100"></div>
+          </div>
+
+          <!-- Quick Select Dropdown -->
+          <select id="quickTeamSelect" onchange="handleDropdownSelect(this)" class="text-xs font-semibold bg-white border border-slate-300 rounded-lg px-2.5 py-1.5 text-slate-700 focus:outline-none focus:ring-2 focus:ring-blue-600">
+            <option value="">+ Quick Add Team...</option>
+          </select>
+
+          <!-- Preset / Reset Buttons -->
+          <button onclick="loadMockupPreset()" class="text-xs font-bold px-2.5 py-1.5 rounded-lg bg-blue-100 text-blue-900 hover:bg-blue-200 transition" title="Load the 12 teams from FanMap-static.png">
+            Load FanMap Preset (12)
+          </button>
+          <button onclick="clearAllTeams()" class="text-xs font-semibold px-2.5 py-1.5 rounded-lg bg-slate-200 text-slate-700 hover:bg-red-100 hover:text-red-700 transition">
+            Clear All
+          </button>
+        </div>
+
+        <!-- Right: Desktop Quick-Jump Round Buttons -->
+        <div class="hidden md:flex items-center gap-1 text-xs font-extrabold">
+          <span class="text-slate-500 mr-1">Jump:</span>
+          <a href="#round-1" class="px-2 py-1 rounded bg-white border border-slate-300 text-slate-800 hover:bg-blue-50">R1 <span class="font-normal text-[10px]">9:00</span></a>
+          <a href="#round-2" class="px-2 py-1 rounded bg-white border border-slate-300 text-slate-800 hover:bg-blue-50">R2 <span class="font-normal text-[10px]">11:15</span></a>
+          <a href="#round-3" class="px-2 py-1 rounded bg-white border border-slate-300 text-slate-800 hover:bg-blue-50">R3 <span class="font-normal text-[10px]">1:30</span></a>
+          <a href="#round-4" class="px-2 py-1 rounded bg-white border border-slate-300 text-slate-800 hover:bg-blue-50">R4 <span class="font-normal text-[10px]">3:45</span></a>
+        </div>
+
+      </div>
+    </div>
+  </header>
+
+  <!-- COMPACT FLOATING MOBILE QUICK-JUMP BAR (Bottom Right on Mobile Only) -->
+  <div class="md:hidden fixed bottom-3 right-3 z-40 no-print flex items-center gap-1 bg-slate-900/90 backdrop-blur text-white px-2.5 py-1.5 rounded-full shadow-lg border border-slate-700 text-[11px] font-extrabold">
+    <a href="#top" class="px-1.5 py-0.5 rounded-full bg-blue-600 text-white">↑ Teams</a>
+    <a href="#round-1" class="px-1.5 py-0.5 hover:text-blue-300">R1</a>
+    <a href="#round-2" class="px-1.5 py-0.5 hover:text-blue-300">R2</a>
+    <a href="#round-3" class="px-1.5 py-0.5 hover:text-blue-300">R3</a>
+    <a href="#round-4" class="px-1.5 py-0.5 hover:text-blue-300">R4</a>
+  </div>
+
+  <!-- MAIN CONTENT AREA -->
+  <main class="max-w-7xl mx-auto px-2 sm:px-6 pt-4">
+    
+    <!-- Date Subheader -->
+    <div class="flex items-center justify-between mb-3 px-2">
+      <h2 id="currentDayHeading" class="text-base sm:text-xl font-extrabold text-slate-900">
+        Friday, Oct 23, 2026
+      </h2>
+      <div class="flex items-center gap-3 text-xs font-semibold text-slate-600 no-print">
+        <span class="inline-flex items-center gap-1"><span class="w-3 h-3 inline-block border-2 border-blue-700 bg-blue-50"></span> Field Pass (1,2,10,11)</span>
+        <span class="inline-flex items-center gap-1"><span class="w-3 h-3 inline-block border-2 border-red-600 bg-red-50"></span> Showcase (Field 4)</span>
+      </div>
+    </div>
+
+    <!-- TWO-COLUMN DESKTOP / STACKED MOBILE GRID (Matches FanMap-static.jpg) -->
+    <div class="grid grid-cols-1 lg:grid-cols-12 gap-6 items-start print-container">
+      
+      <!-- LEFT COLUMN: 4 ROUND FIELD MAPS -->
+      <div id="mapsColumn" class="lg:col-span-7 xl:col-span-8 space-y-5">
+        <!-- Populated dynamically by JavaScript -->
+      </div>
+
+      <!-- RIGHT COLUMN: SELECTED TEAMS ("MY TEAMS" CARDS) -->
+      <div id="myTeamsSidebar" class="lg:col-span-5 xl:col-span-4 lg:sticky lg:top-28 space-y-2.5">
+        <div class="flex items-center justify-between border-b border-slate-300 pb-1.5 mb-2 no-print">
+          <span class="text-xs font-extrabold uppercase tracking-wider text-slate-600">
+            Selected Teams (<span id="selectedCount">0</span>)
+          </span>
+          <span class="text-[11px] text-slate-500 font-medium">
+            Color = Division
+          </span>
+        </div>
+
+        <!-- Team Cards List (Matches right side of FanMap-static.jpg) -->
+        <div id="selectedTeamsContainer" class="space-y-2.5">
+          <!-- Populated dynamically by JavaScript -->
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- GAME MATCHUP POPUP MODAL (ON CLICK / TAP OF TEAM ICON, NAME, OR FIELD NUMBER) -->
+  <div id="gamePopupModal" onclick="if(event.target === this) closeGamePopup()" class="hidden fixed inset-0 bg-slate-900/65 backdrop-blur-xs z-50 flex items-center justify-center p-4 no-print">
+    <div class="bg-white rounded-2xl max-w-md w-full p-5 sm:p-6 shadow-2xl border-2 border-slate-800 transform transition-all">
+      <!-- Top Header: Round & Field Badge + Close Button -->
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200">
+        <div>
+          <div id="popupRoundLabel" class="text-xs font-extrabold uppercase tracking-wider text-blue-900">
+            ROUND 1 - 9:00amPT
+          </div>
+          <div id="popupFieldLabel" class="text-lg sm:text-xl font-black text-slate-900">
+            Field 1
+          </div>
+        </div>
+        <button onclick="closeGamePopup()" class="w-8 h-8 rounded-full bg-slate-100 hover:bg-slate-200 text-slate-600 hover:text-slate-900 flex items-center justify-center font-black text-xl leading-none transition" aria-label="Close popup">
+          &times;
+        </button>
+      </div>
+
+      <!-- Division & Pool Subtitle -->
+      <div id="popupDivisionBadge" class="mt-3 text-center"></div>
+
+      <!-- Two Team Names & Logos in Clear, Legible Font -->
+      <div id="popupTeamsContent" class="my-4 space-y-3">
+        <!-- Populated dynamically -->
+      </div>
+
+      <!-- Footer Close Button -->
+      <div class="pt-3 border-t border-slate-200 flex justify-end">
+        <button onclick="closeGamePopup()" class="w-full sm:w-auto px-5 py-2 rounded-xl bg-slate-900 hover:bg-slate-800 text-white font-bold text-sm transition shadow-sm">
+          Close
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    // ============================================================================
+    // 1. OFFICIAL 48 TEAM LOGOS (RELATIVE GITHUB PATHS + EMBEDDED DATA FALLBACK)
+    // ============================================================================
+    // When hosted on GitHub Pages with the /logos/ folder, the browser can load
+    // either the embedded WebP data URI (zero network latency) or ./logos/<file>.
+    const TEAM_LOGO_FILES = {"6ixers": "logos/6ixers.png", "amp": "logos/amp.png", "bent": "logos/bent.png", "bravo": "logos/bravo.png", "brutesquad": "logos/brutesquad.png", "burrito": "logos/burrito.jpg", "chain": "logos/chain.png", "dig": "logos/dig.png", "dimes": "logos/dimes.png", "disco": "logos/disco.png", "doublewide": "logos/doublewide.jpeg", "dragn": "logos/dragn.png", "flight": "logos/flight.png", "flipside": "logos/flipside.jpeg", "furious": "logos/furious.jpg", "fury": "logos/fury.png", "goat": "logos/goat.png", "hybrid": "logos/hybrid.png", "lotus": "logos/lotus.png", "machine": "logos/machine.png", "mephisto": "logos/mephisto.jpg", "mixtape": "logos/mixtape.jpg", "mollybrown": "logos/mollybrown.jpg", "nightlock": "logos/nightlock.png", "pacmen": "logos/pacmen.png", "parcha": "logos/parcha.png", "phoenix": "logos/phoenix.png", "polarbears": "logos/polarbears.png", "pony": "logos/pony.jpg", "pop": "logos/pop.png", "port": "logos/port.png", "revolver": "logos/revolver.png", "rhino": "logos/rhino.png", "ring": "logos/ring.jpg", "riot": "logos/riot.png", "scandal": "logos/scandal.jpeg", "schwa": "logos/schwa.jpg", "scorch": "logos/scorch.png", "shame": "logos/shame.jpg", "slow": "logos/slow.jpg", "sockeye": "logos/sockeye.png", "starling": "logos/starling.png", "subzero": "logos/subzero.jpeg", "toro": "logos/toro.png", "tower": "logos/tower.png", "truckstop": "logos/truckstop.png", "union": "logos/union.png", "xist": "logos/xist.jpg"};
+    const TEAM_LOGOS_DATA = {};
+
+    // ============================================================================
+    // 2. COMPLETE 2026 USA ULTIMATE CLUB NATIONALS TEAMS DATABASE (48 TEAMS)
+    // ============================================================================
+    const TEAMS = {
+      // ---------------- WOMEN'S DIVISION (16 TEAMS) ----------------
+      'scandal':     { id: 'scandal', name: 'Scandal', fullName: 'Washington DC Scandal', shortLabel: 'Scandal', div: 'W', overall: 1, pool: 'A', seed: 'A1', cardColor: 'blue' },
+      'fury':        { id: 'fury', name: 'Fury', fullName: 'San Francisco Fury', shortLabel: 'Fury', div: 'W', overall: 2, pool: 'B', seed: 'B1', cardColor: 'blue' },
+      'brutesquad':  { id: 'brutesquad', name: 'Brute Squad', fullName: 'Boston Brute Squad', shortLabel: 'Brute', div: 'W', overall: 3, pool: 'C', seed: 'C1', cardColor: 'blue' },
+      'mollybrown':  { id: 'mollybrown', name: 'Molly Brown', fullName: 'Denver Molly Brown', shortLabel: 'Molly', div: 'W', overall: 4, pool: 'D', seed: 'D1', cardColor: 'blue' },
+      'riot':        { id: 'riot', name: 'Riot', fullName: 'Seattle Riot', shortLabel: 'Riot', div: 'W', overall: 5, pool: 'D', seed: 'D2', cardColor: 'blue' },
+      '6ixers':      { id: '6ixers', name: '6ixers', fullName: 'Toronto 6ixers', shortLabel: '6ixers', div: 'W', overall: 6, pool: 'C', seed: 'C2', cardColor: 'blue' },
+      'nightlock':   { id: 'nightlock', name: 'Nightlock', fullName: 'San Francisco Nightlock', shortLabel: 'Nightlock', div: 'W', overall: 7, pool: 'B', seed: 'B2', cardColor: 'blue' },
+      'flipside':    { id: 'flipside', name: 'Flipside', fullName: 'San Diego Flipside', shortLabel: 'Flipside', div: 'W', overall: 8, pool: 'A', seed: 'A2', cardColor: 'blue' },
+      'bent':        { id: 'bent', name: 'Bent', fullName: 'New York BENT', shortLabel: 'Bent', div: 'W', overall: 9, pool: 'D', seed: 'D3', cardColor: 'blue' },
+      'dimes':       { id: 'dimes', name: 'Dimes', fullName: 'Dallas Dimes', shortLabel: 'Dimes', div: 'W', overall: 10, pool: 'C', seed: 'C3', cardColor: 'blue' },
+      'flight':      { id: 'flight', name: 'Flight', fullName: 'Philadelphia Flight', shortLabel: 'Flight', div: 'W', overall: 11, pool: 'B', seed: 'B3', cardColor: 'blue' },
+      'schwa':       { id: 'schwa', name: 'Schwa', fullName: 'Portland Schwa', shortLabel: 'Schwa', div: 'W', overall: 12, pool: 'A', seed: 'A3', cardColor: 'blue' },
+      'pop':         { id: 'pop', name: 'Pop', fullName: 'Minneapolis Pop', shortLabel: 'Pop', div: 'W', overall: 13, pool: 'A', seed: 'A4', cardColor: 'blue' },
+      'starling':    { id: 'starling', name: 'Starling', fullName: 'Northampton Starling', shortLabel: 'Starling', div: 'W', overall: 14, pool: 'B', seed: 'B4', cardColor: 'blue' },
+      'parcha':      { id: 'parcha', name: 'Parcha', fullName: 'Pittsburgh Parcha', shortLabel: 'Parcha', div: 'W', overall: 15, pool: 'C', seed: 'C4', cardColor: 'blue' },
+      'phoenix':     { id: 'phoenix', name: 'Phoenix', fullName: 'Raleigh Phoenix', shortLabel: 'Phoenix', div: 'W', overall: 16, pool: 'D', seed: 'D4', cardColor: 'blue' },
+
+      // ---------------- MEN'S DIVISION (16 TEAMS) ----------------
+      'machine':     { id: 'machine', name: 'Machine', fullName: 'Chicago Machine', shortLabel: 'Machine', div: 'M', overall: 1, pool: 'A', seed: 'A1', cardColor: 'red' },
+      'pony':        { id: 'pony', name: 'Pony', fullName: 'New York PoNY', shortLabel: 'Pony', div: 'M', overall: 2, pool: 'B', seed: 'B1', cardColor: 'red' },
+      'rhino':       { id: 'rhino', name: 'Rhino Slam!', fullName: 'Portland Rhino Slam!', shortLabel: 'Rhino', div: 'M', overall: 3, pool: 'C', seed: 'C1', cardColor: 'red' },
+      'dig':         { id: 'dig', name: 'DiG', fullName: 'Boston DiG', shortLabel: 'Dig', div: 'M', overall: 4, pool: 'D', seed: 'D1', cardColor: 'red' },
+      'revolver':    { id: 'revolver', name: 'Revolver', fullName: 'San Francisco Revolver', shortLabel: 'Revolver', div: 'M', overall: 5, pool: 'D', seed: 'D2', cardColor: 'red' },
+      'subzero':     { id: 'subzero', name: 'Sub Zero', fullName: 'Minneapolis Sub Zero', shortLabel: 'Sub Zero', div: 'M', overall: 6, pool: 'C', seed: 'C2', cardColor: 'red' },
+      'chain':       { id: 'chain', name: 'Chain Lightning', fullName: 'Atlanta Chain Lightning', shortLabel: 'Chain', div: 'M', overall: 7, pool: 'B', seed: 'B2', cardColor: 'red' },
+      'ring':        { id: 'ring', name: 'Ring of Fire', fullName: 'Raleigh Ring of Fire', shortLabel: 'Ring', div: 'M', overall: 8, pool: 'A', seed: 'A2', cardColor: 'red' },
+      'truckstop':   { id: 'truckstop', name: 'Truckstop', fullName: 'Washington DC Truck Stop', shortLabel: 'Truckstop', div: 'M', overall: 9, pool: 'D', seed: 'D3', cardColor: 'red' },
+      'pacmen':      { id: 'pacmen', name: 'Pacmen', fullName: 'Philadelphia Pacmen', shortLabel: 'Pacmen', div: 'M', overall: 10, pool: 'C', seed: 'C3', cardColor: 'red' },
+      'sockeye':     { id: 'sockeye', name: 'Sockeye', fullName: 'Seattle Sockeye', shortLabel: 'Sockeye', div: 'M', overall: 11, pool: 'B', seed: 'B3', cardColor: 'red' },
+      'goat':        { id: 'goat', name: 'GOAT', fullName: 'Toronto GOAT', shortLabel: 'Goat', div: 'M', overall: 12, pool: 'A', seed: 'A3', cardColor: 'red' },
+      'furious':     { id: 'furious', name: 'Furious George', fullName: 'Vancouver Furious George', shortLabel: 'Furious', div: 'M', overall: 13, pool: 'A', seed: 'A4', cardColor: 'red' },
+      'bravo':       { id: 'bravo', name: 'Johnny Bravo', fullName: 'Denver Johnny Bravo', shortLabel: 'Bravo', div: 'M', overall: 14, pool: 'B', seed: 'B4', cardColor: 'red' },
+      'mephisto':    { id: 'mephisto', name: 'Mephisto', fullName: 'Montreal Mephisto', shortLabel: 'Mephisto', div: 'M', overall: 15, pool: 'C', seed: 'C4', cardColor: 'red' },
+      'doublewide':  { id: 'doublewide', name: 'Doublewide', fullName: 'Austin Doublewide', shortLabel: 'Double', div: 'M', overall: 16, pool: 'D', seed: 'D4', cardColor: 'red' },
+
+      // ---------------- MIXED DIVISION (16 TEAMS) ----------------
+      'xist':        { id: 'xist', name: 'Xist', fullName: 'New York XIST', shortLabel: 'Xist', div: 'X', overall: 1, pool: 'A', seed: 'A1', cardColor: 'purple' },
+      'hybrid':      { id: 'hybrid', name: 'Hybrid', fullName: 'Ann Arbor Hybrid', shortLabel: 'Hybrid', div: 'X', overall: 2, pool: 'B', seed: 'B1', cardColor: 'purple' },
+      'tower':       { id: 'tower', name: 'Tower', fullName: 'Sacramento Tower', shortLabel: 'Tower', div: 'X', overall: 3, pool: 'C', seed: 'C1', cardColor: 'purple' },
+      'slow':        { id: 'slow', name: 'Slow', fullName: 'Boston Slow', shortLabel: 'Slow', div: 'X', overall: 4, pool: 'D', seed: 'D1', cardColor: 'purple' },
+      'disco':       { id: 'disco', name: 'Austin Disco Club', fullName: 'Austin Disco Club', shortLabel: 'Disco', div: 'X', overall: 5, pool: 'D', seed: 'D2', cardColor: 'purple' },
+      'polarbears':  { id: 'polarbears', name: 'Polar Bears', fullName: 'San Francisco Polar Bears', shortLabel: 'P. Bears', div: 'X', overall: 6, pool: 'C', seed: 'C2', cardColor: 'purple' },
+      'shame':       { id: 'shame', name: 'shame.', fullName: 'Fort Collins shame.', shortLabel: 'shame.', div: 'X', overall: 7, pool: 'B', seed: 'B2', cardColor: 'purple' },
+      'amp':         { id: 'amp', name: 'AMP', fullName: 'Philadelphia AMP', shortLabel: 'Amp', div: 'X', overall: 8, pool: 'A', seed: 'A2', cardColor: 'purple' },
+      'toro':        { id: 'toro', name: 'Toro', fullName: 'Durham Toro', shortLabel: 'Toro', div: 'X', overall: 9, pool: 'D', seed: 'D3', cardColor: 'purple' },
+      'dragn':       { id: 'dragn', name: "Drag'n Thrust", fullName: "Minneapolis Drag'n Thrust", shortLabel: "Drag'n", div: 'X', overall: 10, pool: 'C', seed: 'C3', cardColor: 'purple' },
+      'lotus':       { id: 'lotus', name: 'Lotus', fullName: 'Los Angeles Lotus', shortLabel: 'Lotus', div: 'X', overall: 11, pool: 'B', seed: 'B3', cardColor: 'purple' },
+      'burrito':     { id: 'burrito', name: 'California Burrito', fullName: 'San Diego California Burrito', shortLabel: 'Burrito', div: 'X', overall: 12, pool: 'A', seed: 'A3', cardColor: 'purple' },
+      'port':        { id: 'port', name: 'Port Authority', fullName: 'Pittsburgh Port Authority', shortLabel: 'Port', div: 'X', overall: 13, pool: 'A', seed: 'A4', cardColor: 'purple' },
+      'mixtape':     { id: 'mixtape', name: 'Mixtape', fullName: 'Seattle Mixtape', shortLabel: 'Mixtape', div: 'X', overall: 14, pool: 'B', seed: 'B4', cardColor: 'purple' },
+      'scorch':      { id: 'scorch', name: 'Oregon Scorch', fullName: 'Eugene Oregon Scorch', shortLabel: 'Scorch', div: 'X', overall: 15, pool: 'C', seed: 'C4', cardColor: 'purple' },
+      'union':       { id: 'union', name: 'Union', fullName: 'Toronto Union', shortLabel: 'Union', div: 'X', overall: 16, pool: 'D', seed: 'D4', cardColor: 'purple' }
+    };
+
+    // ============================================================================
+    // 3. THURSDAY OCT 22 POOL PLAY SCHEDULE (ALL 4 ROUNDS, FIELDS 1-18)
+    // ============================================================================
+        
+
+    // ============================================================================
+    const SCHEDULES = {
+  friday: {
+    title: "Friday, Oct 23, 2026 - Pool Play",
+    rounds: [
+      {
+        roundNum: 1,
+        label: "ROUND 1 - 9:00amPT",
+        byePool: "B",
+        byeTitle: "Bye Round - Pool B",
+        games: [
+          { field: 1,  t1: 'polarbears', t2: 'scorch' },
+          { field: 2,  t1: 'mollybrown', t2: 'bent' },
+          { field: 3,  t1: 'xist',       t2: 'burrito' },
+          { field: 4,  t1: 'tower',      t2: 'dragn' },
+          { field: 5,  t1: 'machine',    t2: 'goat' },
+          { field: 6,  t1: 'subzero',    t2: 'mephisto' },
+          { field: 7,  t1: 'riot',       t2: 'phoenix' },
+          { field: 8,  t1: 'brutesquad', t2: 'dimes' },
+          { field: 9,  t1: 'revolver',   t2: 'doublewide' },
+          { field: 10, t1: 'dig',        t2: 'truckstop' },
+          { field: 11, t1: 'rhino',      t2: 'pacmen' },
+          { field: 12, t1: 'scandal',    t2: 'schwa' },
+          { field: 13, t1: 'flipside',   t2: 'pop' },
+          { field: 14, t1: 'amp',        t2: 'port' },
+          { field: 15, t1: 'ring',       t2: 'furious' },
+          { field: 16, t1: 'disco',      t2: 'union' },
+          { field: 17, t1: '6ixers',     t2: 'parcha' },
+          { field: 18, t1: 'slow',       t2: 'toro' }
+        ]
+      },
+      {
+        roundNum: 2,
+        label: "ROUND 2 - 11:15amPT",
+        byePool: "C",
+        byeTitle: "Bye Round - Pool C",
+        games: [
+          { field: 1,  t1: 'disco',      t2: 'toro' },
+          { field: 2,  t1: 'flipside',   t2: 'schwa' },
+          { field: 3,  t1: 'xist',       t2: 'port' },
+          { field: 4,  t1: 'riot',       t2: 'bent' },
+          { field: 5,  t1: 'machine',    t2: 'furious' },
+          { field: 6,  t1: 'fury',       t2: 'flight' },
+          { field: 7,  t1: 'mollybrown', t2: 'phoenix' },
+          { field: 8,  t1: 'shame',      t2: 'mixtape' },
+          { field: 9,  t1: 'revolver',   t2: 'truckstop' },
+          { field: 10, t1: 'pony',       t2: 'sockeye' },
+          { field: 11, t1: 'chain',      t2: 'bravo' },
+          { field: 12, t1: 'scandal',    t2: 'pop' },
+          { field: 13, t1: 'nightlock',  t2: 'starling' },
+          { field: 14, t1: 'amp',        t2: 'burrito' },
+          { field: 15, t1: 'ring',       t2: 'goat' },
+          { field: 16, t1: 'hybrid',     t2: 'lotus' },
+          { field: 17, t1: 'dig',        t2: 'doublewide' },
+          { field: 18, t1: 'slow',       t2: 'union' }
+        ]
+      },
+      {
+        roundNum: 3,
+        label: "ROUND 3 - 1:30pmPT",
+        byePool: "D",
+        byeTitle: "Bye Round - Pool D",
+        games: [
+          { field: 1,  t1: 'port',       t2: 'burrito' },
+          { field: 2,  t1: 'nightlock',  t2: 'flight' },
+          { field: 3,  t1: 'pony',       t2: 'bravo' },
+          { field: 4,  t1: 'xist',       t2: 'amp' },
+          { field: 5,  t1: 'chain',      t2: 'sockeye' },
+          { field: 6,  t1: 'fury',       t2: 'starling' },
+          { field: 7,  t1: 'goat',       t2: 'furious' },
+          { field: 8,  t1: 'tower',      t2: 'scorch' },
+          { field: 9,  t1: 'polarbears', t2: 'dragn' },
+          { field: 10, t1: 'machine',    t2: 'ring' },
+          { field: 11, t1: 'scandal',    t2: 'flipside' },
+          { field: 12, t1: 'hybrid',     t2: 'mixtape' },
+          { field: 13, t1: 'shame',      t2: 'lotus' },
+          { field: 14, t1: 'rhino',      t2: 'mephisto' },
+          { field: 15, t1: 'schwa',      t2: 'pop' },
+          { field: 16, t1: 'brutesquad', t2: 'parcha' },
+          { field: 17, t1: '6ixers',     t2: 'dimes' },
+          { field: 18, t1: 'subzero',    t2: 'pacmen' }
+        ]
+      },
+      {
+        roundNum: 4,
+        label: "ROUND 4 - 3:45pmPT",
+        byePool: "A",
+        byeTitle: "Bye Round - Pool A",
+        games: [
+          { field: 1,  t1: 'hybrid',     t2: 'shame' },
+          { field: 2,  t1: 'brutesquad', t2: '6ixers' },
+          { field: 3,  t1: 'pony',       t2: 'chain' },
+          { field: 4,  t1: 'revolver',   t2: 'dig' },
+          { field: 5,  t1: 'sockeye',    t2: 'bravo' },
+          { field: 6,  t1: 'fury',       t2: 'nightlock' },
+          { field: 7,  t1: 'mollybrown', t2: 'riot' },
+          { field: 8,  t1: 'tower',      t2: 'polarbears' },
+          { field: 9,  t1: 'dragn',      t2: 'scorch' },
+          { field: 10, t1: 'rhino',      t2: 'subzero' },
+          { field: 11, t1: 'dimes',      t2: 'parcha' },
+          { field: 12, t1: 'flight',     t2: 'starling' },
+          { field: 13, t1: 'lotus',      t2: 'mixtape' },
+          { field: 14, t1: 'truckstop',  t2: 'doublewide' },
+          { field: 15, t1: 'toro',       t2: 'union' },
+          { field: 16, t1: 'slow',       t2: 'disco' },
+          { field: 17, t1: 'bent',       t2: 'phoenix' },
+          { field: 18, t1: 'pacmen',     t2: 'mephisto' }
+        ]
+      }
+    ]
+  },
+  saturday_preq: {
+    title: "Saturday, Oct 24, 2026 - Prequarterfinals",
+    rounds: [
+      {
+        roundNum: 1,
+        label: "PREQUARTERS ROUND 1 - 9:00amPT",
+        byePool: "NONE",
+        byeTitle: "",
+        games: [
+          { field: 1,  t1: 'lotus',      t2: 'polarbears' },
+          { field: 2,  t1: 'disco',      t2: 'port' },
+          { field: 3,  t1: 'shame',      t2: 'scorch' },
+          { field: 4,  t1: 'starling',   t2: '6ixers' },
+          { field: 10, t1: 'toro',       t2: 'amp' },
+          { field: 11, t1: 'nightlock',  t2: 'parcha' }
+        ]
+      },
+      {
+        roundNum: 2,
+        label: "PREQUARTERS ROUND 2 - 11:15amPT",
+        byePool: "NONE",
+        byeTitle: "",
+        games: [
+          { field: 1,  t1: 'riot',       t2: 'pop' },
+          { field: 2,  t1: 'bent',       t2: 'schwa' },
+          { field: 3,  t1: 'chain',      t2: 'subzero' },
+          { field: 4,  t1: 'truckstop',  t2: 'machine' },
+          { field: 10, t1: 'dig',        t2: 'goat' },
+          { field: 11, t1: 'bravo',      t2: 'pacmen' }
+        ]
+      }
+    ]
+  }
+};
+
+
+    // ============================================================================
+    // 4. DEFAULT 12 TEAMS FROM USER'S FanMap-static.jpg MOCKUP
+    // ============================================================================
+    const MOCKUP_PRESET_TEAMS = [
+      'bent', 'pony', 'xist',
+      'scandal', 'truckstop',
+      'phoenix', 'ring', 'toro',
+      'schwa', 'fury', 'flipside', 'riot'
+    ];
+
+    let selectedTeamIds = [...MOCKUP_PRESET_TEAMS];
+    let currentDay = 'saturday_preq';
+
+    // ============================================================================
+    // 5. OFFICIAL TEAM LOGO RENDERER (WORKS IN CANVAS PREVIEW & ON GITHUB PAGES)
+    // ============================================================================
+    function getTeamBadgeHTML(teamId, sizeClass = "w-7 h-7") {
+      const team = TEAMS[teamId];
+      if (!team) return '';
+
+      const b64Src = TEAM_LOGOS_DATA[teamId];
+      const fileSrc = TEAM_LOGO_FILES[teamId];
+
+      // Primary source uses embedded WebP (instant render everywhere) or ./logos/ file on GitHub
+      const primarySrc = b64Src || fileSrc || '';
+
+      return `
+        <div class="${sizeClass} flex items-center justify-center select-none overflow-hidden" title="${team.fullName}">
+          <img
+            src="${primarySrc}"
+            data-file-src="${fileSrc || ''}"
+            alt="${team.name}"
+            class="w-full h-full object-contain"
+            onerror="if(this.dataset.fileSrc && this.src !== this.dataset.fileSrc){this.src = this.dataset.fileSrc;}"
+          />
+        </div>
+      `;
+    }
+
+    // ============================================================================
+    // 6. RENDER FIELD BOX CONTENT (FOLLOWING EXACT MOCKUP RULES)
+    // ============================================================================
+    function getFieldContent(roundObj, fieldNum) {
+      const match = roundObj.games.find(g => g.field === fieldNum);
+      if (!match) return { topHTML: '', botHTML: '', isActive: false };
+
+      const isPreq = currentDay === 'saturday_preq';
+      const t1Selected = isPreq || selectedTeamIds.includes(match.t1);
+      const t2Selected = isPreq || selectedTeamIds.includes(match.t2);
+
+      if (!t1Selected && !t2Selected) {
+        return { topHTML: '', botHTML: '', isActive: false };
+      }
+
+      const team1 = TEAMS[match.t1];
+      const team2 = TEAMS[match.t2];
+
+      if (t1Selected && t2Selected) {
+        // Head-to-head between two selected teams: Both official logos shown!
+        return {
+          topHTML: getTeamBadgeHTML(match.t1, "w-full h-full p-0.5 sm:p-1"),
+          botHTML: getTeamBadgeHTML(match.t2, "w-full h-full p-0.5 sm:p-1"),
+          isActive: true,
+          tooltip: `Field ${fieldNum}: ${team1.name} vs. ${team2.name}`
+        };
+      }
+
+      if (t1Selected) {
+        return {
+          topHTML: getTeamBadgeHTML(match.t1, "w-full h-full p-0.5 sm:p-1"),
+          botHTML: `<span class="text-[10px] sm:text-[13px] font-bold text-slate-900 leading-none tracking-tight truncate px-0.5">${team2.shortLabel}</span>`,
+          isActive: true,
+          tooltip: `Field ${fieldNum}: ${team1.name} vs. ${team2.name}`
+        };
+      }
+
+      // t2Selected only -> Selected team (t2) logo in top box, opponent (t1) short name in bottom box
+      return {
+        topHTML: getTeamBadgeHTML(match.t2, "w-full h-full p-0.5 sm:p-1"),
+        botHTML: `<span class="text-[10px] sm:text-[13px] font-bold text-slate-900 leading-none tracking-tight truncate px-0.5">${team1.shortLabel}</span>`,
+        isActive: true,
+        tooltip: `Field ${fieldNum}: ${team2.name} vs. ${team1.name}`
+      };
+    }
+
+    // Build single field card HTML (1..18)
+    function renderSingleFieldHTML(roundObj, fieldNum) {
+      const { topHTML, botHTML, isActive, tooltip } = getFieldContent(roundObj, fieldNum);
+      const activeRing = isActive ? 'ring-1 ring-slate-900/20' : '';
+      let specialBorderClass = '';
+      const isPreq = currentDay === 'saturday_preq';
+      const fieldPassFields = isPreq ? [1, 2, 3, 10, 11] : [1, 2, 10, 11];
+      if (fieldPassFields.includes(fieldNum)) {
+        specialBorderClass = 'field-pass-border';
+      } else if (fieldNum === 4) {
+        specialBorderClass = 'showcase-border';
+      }
+
+      const match = roundObj.games.find(g => g.field === fieldNum);
+      const fullTooltip = match
+        ? `Field ${fieldNum}: ${TEAMS[match.t1].name} vs. ${TEAMS[match.t2].name} (Click/tap for details)`
+        : (tooltip || `Field ${fieldNum}`);
+
+      return `
+        <div onclick="openGamePopup(${roundObj.roundNum}, ${fieldNum})" role="button" tabindex="0" onkeydown="if(event.key==='Enter'||event.key===' '){event.preventDefault();openGamePopup(${roundObj.roundNum}, ${fieldNum});}" class="field-card ${specialBorderClass} ${activeRing}" title="${fullTooltip}">
+          <div class="field-slot-top">${topHTML}</div>
+          <div class="field-slot-mid">
+            <div class="field-num-circle">${fieldNum}</div>
+          </div>
+          <div class="field-slot-bot">${botHTML}</div>
+        </div>
+      `;
+    }
+
+    // ============================================================================
+    // 7. RENDER ALL 4 ROUND MAPS (SURF CUP SPORTS PARK LAYOUT)
+    // ============================================================================
+    function renderAllMaps() {
+      const dayData = SCHEDULES[currentDay];
+      document.getElementById('currentDayHeading').textContent = dayData.title;
+      
+      const legendEl = document.getElementById('currentDayHeading').nextElementSibling;
+      if (legendEl) {
+        if (currentDay === 'saturday_preq') {
+          legendEl.innerHTML = '<span class="inline-flex items-center gap-1"><span class="w-3 h-3 inline-block border-2 border-blue-700 bg-blue-50"></span> Field Pass (1,2,3,10,11)</span><span class="inline-flex items-center gap-1"><span class="w-3 h-3 inline-block border-2 border-red-600 bg-red-50"></span> Showcase (Field 4)</span>';
+        } else {
+          legendEl.innerHTML = '<span class="inline-flex items-center gap-1"><span class="w-3 h-3 inline-block border-2 border-blue-700 bg-blue-50"></span> Field Pass (1,2,10,11)</span><span class="inline-flex items-center gap-1"><span class="w-3 h-3 inline-block border-2 border-red-600 bg-red-50"></span> Showcase (Field 4)</span>';
+        }
+      }
+
+      const mapsColumn = document.getElementById('mapsColumn');
+      mapsColumn.innerHTML = dayData.rounds.map(roundObj => {
+        // Find selected teams on a bye this round
+        const byeTeams = selectedTeamIds
+          .map(id => TEAMS[id])
+          .filter(Boolean)
+          .filter(t => roundObj.byePool !== 'NONE' && t.pool === roundObj.byePool);
+
+        const byeIconsHTML = byeTeams.length > 0
+          ? byeTeams.map(t => `<div class="bg-white rounded p-0.5 shadow-xs">${getTeamBadgeHTML(t.id, "w-5 h-5 sm:w-6 sm:h-6")}</div>`).join('')
+          : `<span class="text-[10px] text-slate-700/70 italic">No selected teams on bye</span>`;
+
+        return `
+          <section id="round-${roundObj.roundNum}" class="round-map-wrapper flex items-stretch scroll-mt-4 md:scroll-mt-28">
+            <!-- Left Vertical EL CAMINO REAL Road Strip -->
+            <div class="w-5 sm:w-6 flex flex-col items-center justify-between py-2 mr-1 select-none">
+              <div class="w-0.5 h-6 bg-sky-300"></div>
+              <span class="vertical-road text-[9px] sm:text-[11px] tracking-widest">EL CAMINO REAL</span>
+              <div class="w-0.5 h-6 bg-sky-300"></div>
+            </div>
+
+            <!-- Main Surf Cup Sports Park Map Box -->
+            <div class="surf-map-bg flex-1 rounded-sm p-2 sm:p-3 relative shadow-sm">
+              
+              <!-- Top Header Row: Nationals Emblem + Round Title + Parking Bar -->
+              <div class="flex items-center gap-2 sm:gap-3 mb-2">
+                <!-- Official 2026 USAU Nationals Tournament Logo -->
+                <div class="w-12 h-12 sm:w-14 sm:h-14 shrink-0 flex items-center justify-center select-none">
+                  <img
+                    src="logos/Club_Championships_2026_F_Circle_Color.png"
+                    alt="2026 USA Ultimate Club National Championships"
+                    class="w-full h-full object-contain drop-shadow-sm"
+                  />
+                </div>
+
+                <!-- Round Title & Parking Strip -->
+                <div class="flex-1">
+                  <div class="text-center font-black text-sm sm:text-lg tracking-wide text-slate-950 mb-1">
+                    ${roundObj.label}
+                  </div>
+                  <div class="parking-bar text-white text-center font-extrabold text-[10px] sm:text-xs tracking-widest py-0.5 rounded-xs">
+                    PARKING
+                  </div>
+                </div>
+              </div>
+
+              <!-- TOP ROW OF FIELDS (1 - 9) + HQ COLUMN -->
+              <div class="relative flex items-center">
+                <!-- EXIT Vertical Label -->
+                <span class="vertical-side-label mr-0.5">EXIT</span>
+
+                <div class="grid grid-cols-10 gap-1 sm:gap-1.5 flex-1 items-stretch">
+                  <!-- Fields 1, 2, 3, 4, 5 -->
+                  <div>${renderSingleFieldHTML(roundObj, 1)}</div>
+                  <div>${renderSingleFieldHTML(roundObj, 2)}</div>
+                  <div>${renderSingleFieldHTML(roundObj, 3)}</div>
+                  <div>${renderSingleFieldHTML(roundObj, 4)}</div>
+                  <div>${renderSingleFieldHTML(roundObj, 5)}</div>
+
+                  <!-- HQ / Food / Merch Pillar -->
+                  <div class="hq-bar text-white flex flex-col items-center justify-around py-1.5 px-1 rounded-xs select-none">
+                    <!-- Fork & Knife Icon -->
+                    <svg class="w-3.5 h-3.5 sm:w-4 sm:h-4 text-white" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M3 3l18 18M15 3l6 6-9 9-6-6 9-9z"/>
+                    </svg>
+                    <!-- Jersey Icon -->
+                    <svg class="w-4 h-4 sm:w-5 sm:h-5 text-white" viewBox="0 0 24 24" fill="currentColor">
+                      <path d="M16 4l4 3-2 4-2-1v10H8V10l-2 1-2-4 4-3h2a2 2 0 004 0h2z"/>
+                    </svg>
+                    <span class="font-black text-[9px] sm:text-[11px] tracking-tight">HQ</span>
+                  </div>
+
+                  <!-- Fields 6, 7, 8, 9 -->
+                  <div>${renderSingleFieldHTML(roundObj, 6)}</div>
+                  <div>${renderSingleFieldHTML(roundObj, 7)}</div>
+                  <div>${renderSingleFieldHTML(roundObj, 8)}</div>
+                  <div>${renderSingleFieldHTML(roundObj, 9)}</div>
+                </div>
+
+                <!-- ENTRANCE Vertical Label -->
+                <span class="vertical-side-label ml-0.5">ENTRANCE</span>
+              </div>
+
+              <!-- CENTRAL WALKWAY WITH MEDICAL CROSSES -->
+              <div class="flex items-center justify-between px-16 sm:px-28 py-1 select-none">
+                <span class="text-red-600 font-black text-sm sm:text-base leading-none">+</span>
+                <span class="text-red-600 font-black text-sm sm:text-base leading-none">+</span>
+              </div>
+
+              <!-- BOTTOM ROW OF FIELDS (10 - 18) + BYE ROUND BOX -->
+              <div class="grid grid-cols-11 gap-1 sm:gap-1.5 items-stretch pl-3 pr-3">
+                <!-- Fields 10, 11, 12, 13 -->
+                <div>${renderSingleFieldHTML(roundObj, 10)}</div>
+                <div>${renderSingleFieldHTML(roundObj, 11)}</div>
+                <div>${renderSingleFieldHTML(roundObj, 12)}</div>
+                <div>${renderSingleFieldHTML(roundObj, 13)}</div>
+
+                <!-- Fields 14, 15, 16, 17, 18 -->
+                <div>${renderSingleFieldHTML(roundObj, 14)}</div>
+                <div>${renderSingleFieldHTML(roundObj, 15)}</div>
+                <div>${renderSingleFieldHTML(roundObj, 16)}</div>
+                <div>${renderSingleFieldHTML(roundObj, 17)}</div>
+                <div>${renderSingleFieldHTML(roundObj, 18)}</div>
+
+                <!-- Bye Round Box (Spans 2 columns on bottom right, matching static mockup) -->
+                ${roundObj.byePool !== 'NONE' ? '<div class="col-span-2 border-2 border-slate-800 bg-[#8ab4ca] p-1 flex flex-col justify-between"><div class="text-[8px] sm:text-[9.5px] font-extrabold text-slate-900 text-center border-b border-slate-700/40 pb-0.5 leading-tight">' + roundObj.byeTitle + '</div><div class="flex flex-wrap items-center justify-center gap-1 my-auto py-0.5">' + byeIconsHTML + '</div></div>' : ''}
+              </div>
+
+              <!-- Click Info Footer Label -->
+              <div class="text-center mt-2 text-[10px] sm:text-xs font-semibold text-slate-700/80 no-print select-none">
+                💡 Click on any field for more info
+              </div>
+
+            </div>
+          </section>
+        `;
+      }).join('');
+    }
+
+    // ============================================================================
+    // 8. RENDER RIGHT SIDEBAR ("MY TEAMS" LIST MATCHING STATIC IMAGE)
+    // ============================================================================
+    function renderSelectedTeamsSidebar() {
+      const container = document.getElementById('selectedTeamsContainer');
+      document.getElementById('selectedCount').textContent = selectedTeamIds.length;
+
+      if (selectedTeamIds.length === 0) {
+        container.innerHTML = `
+          <div class="bg-white border-2 border-dashed border-slate-300 rounded-xl p-6 text-center text-slate-500 text-xs font-medium">
+            No teams selected yet. Use the search bar or dropdown above to pick teams you want to track!
+          </div>
+        `;
+        return;
+      }
+
+      const colorClasses = {
+        blue:   'bg-blue-700 text-white border-blue-800',
+        red:    'bg-red-600 text-white border-red-700',
+        purple: 'bg-purple-700 text-white border-purple-800'
+      };
+
+      container.innerHTML = selectedTeamIds.map(teamId => {
+        const team = TEAMS[teamId];
+        if (!team) return '';
+        const bannerClass = colorClasses[team.cardColor] || colorClasses.black;
+
+        // Calculate quick round summary for this team on current day
+        const roundPills = SCHEDULES[currentDay].rounds.map(r => {
+          const m = r.games.find(g => g.t1 === teamId || g.t2 === teamId);
+          if (m) {
+            const oppId = m.t1 === teamId ? m.t2 : m.t1;
+            return `<button type="button" onclick="openGamePopup(${r.roundNum}, ${m.field})" class="px-1.5 py-0.5 rounded bg-white/20 hover:bg-white/30 text-[10px] font-semibold cursor-pointer transition" title="View matchup details">R${r.roundNum}: F${m.field} (${TEAMS[oppId].shortLabel})</button>`;
+          }
+          if (r.byePool === team.pool) {
+            return `<span class="px-1.5 py-0.5 rounded bg-white/10 text-white/75 text-[10px]">R${r.roundNum}: BYE</span>`;
+          }
+          return '';
+        }).join('');
+
+        return `
+          <div class="flex items-stretch gap-2.5 group">
+            <!-- Left Official Logo Box -->
+            <div class="w-16 h-16 sm:w-20 sm:h-20 bg-white rounded-md border border-slate-200 flex items-center justify-center p-1 shrink-0 shadow-xs">
+              ${getTeamBadgeHTML(team.id, "w-14 h-14 sm:w-16 sm:h-16")}
+            </div>
+
+            <!-- Right Color-Coded Team Banner (Matches FanMap-static.jpg) -->
+            <div class="flex-1 ${bannerClass} border-2 rounded-xs px-3 py-1.5 flex flex-col justify-center relative shadow-xs">
+              <button
+                onclick="removeTeam('${team.id}')"
+                class="no-print absolute top-1 right-1.5 text-white/60 hover:text-white text-sm font-black leading-none"
+                title="Remove ${team.name}"
+              >&times;</button>
+
+              <div class="text-center">
+                <div class="text-lg sm:text-2xl font-normal tracking-tight leading-tight">
+                  ${team.name}
+                </div>
+                <div class="text-xs sm:text-sm font-normal text-white/95 leading-tight">
+                  ${team.div} #${team.overall} Overall, ${team.seed}
+                </div>
+              </div>
+
+              <!-- Mini Round Field Summary Strip -->
+              <div class="flex flex-wrap justify-center gap-1 mt-1 no-print">
+                ${roundPills}
+              </div>
+            </div>
+          </div>
+        `;
+      }).join('');
+    }
+
+    // ============================================================================
+    // 9. TEAM SELECTION, SEARCH, AND FILTER INTERACTIVITY
+    // ============================================================================
+    
+    function switchDay(dayId) {
+      currentDay = dayId;
+      
+      // Update tab styles
+      const tabFri = document.getElementById('tab-friday');
+      const tabSat = document.getElementById('tab-saturday');
+      const teamSelectorBar = document.getElementById('teamSelectorBar');
+      const myTeamsSidebar = document.getElementById('myTeamsSidebar');
+      const mapsColumn = document.getElementById('mapsColumn');
+      
+      if (dayId === 'friday') {
+        tabFri.className = "px-3 py-1.5 rounded-md text-xs font-bold shadow-sm transition bg-blue-900 text-white";
+        tabSat.className = "px-3 py-1.5 rounded-md text-xs font-bold transition text-slate-600 hover:text-slate-900";
+        if (teamSelectorBar) teamSelectorBar.style.display = 'block';
+        if (myTeamsSidebar) myTeamsSidebar.style.display = 'block';
+        if (mapsColumn) {
+          mapsColumn.classList.remove('lg:col-span-12');
+          mapsColumn.classList.add('lg:col-span-7', 'xl:col-span-8');
+        }
+      } else {
+        tabSat.className = "px-3 py-1.5 rounded-md text-xs font-bold shadow-sm transition bg-blue-900 text-white";
+        tabFri.className = "px-3 py-1.5 rounded-md text-xs font-bold transition text-slate-600 hover:text-slate-900";
+        if (teamSelectorBar) teamSelectorBar.style.display = 'none';
+        if (myTeamsSidebar) myTeamsSidebar.style.display = 'none';
+        if (mapsColumn) {
+          mapsColumn.classList.remove('lg:col-span-7', 'xl:col-span-8');
+          mapsColumn.classList.add('lg:col-span-12');
+        }
+      }
+      
+      // Re-render maps and update quick-jump links
+      updateQuickJumpLinks();
+      refreshApp();
+    }
+
+    function updateQuickJumpLinks() {
+      const dayData = SCHEDULES[currentDay];
+      const desktopJumpContainer = document.querySelector('.hidden.md\\:flex.items-center.gap-1');
+      const mobileJumpContainer = document.querySelector('.md\\:hidden.fixed.bottom-3');
+      
+      if (desktopJumpContainer) {
+        desktopJumpContainer.innerHTML = '<span class="text-slate-500 mr-1">Jump:</span>' + dayData.rounds.map(r => 
+          `<a href="#round-${r.roundNum}" class="px-2 py-1 rounded bg-white border border-slate-300 text-slate-800 hover:bg-blue-50">R${r.roundNum} <span class="font-normal text-[10px]">${r.label.split(' - ')[1] || ''}</span></a>`
+        ).join('');
+      }
+      
+      if (mobileJumpContainer) {
+        mobileJumpContainer.innerHTML = '<a href="#top" class="px-1.5 py-0.5 rounded-full bg-blue-600 text-white">↑ Teams</a>' + dayData.rounds.map(r => 
+          `<a href="#round-${r.roundNum}" class="px-1.5 py-0.5 hover:text-blue-300">R${r.roundNum}</a>`
+        ).join('');
+      }
+    }
+
+    function populateDropdown() {
+      const divFilter = document.getElementById('divisionFilter').value;
+      const selectEl = document.getElementById('quickTeamSelect');
+
+      const filtered = Object.values(TEAMS)
+        .filter(t => divFilter === 'ALL' || t.div === divFilter)
+        .sort((a, b) => a.div.localeCompare(b.div) || a.overall - b.overall);
+
+      const groupOptionsHTML = `
+        <option value="ALL_M">All Men's Teams (16)</option>
+        <option value="ALL_W">All Women's Teams (16)</option>
+        <option value="ALL_X">All Mixed Teams (16)</option>
+        <option disabled>────────────────────────</option>
+      `;
+
+      selectEl.innerHTML = `<option value="">+ Quick Add Team (${filtered.length})...</option>` +
+        groupOptionsHTML +
+        filtered.map(t => {
+          const isAdded = selectedTeamIds.includes(t.id);
+          return `<option value="${t.id}">${isAdded ? '✓ ' : ''}[${t.div} #${t.overall}] ${t.name} (${t.seed})</option>`;
+        }).join('');
+    }
+
+    function handleDropdownSelect(selectEl) {
+      const val = selectEl.value;
+      if (!val) return;
+
+      if (val === 'ALL_M' || val === 'ALL_W' || val === 'ALL_X') {
+        const targetDiv = val.split('_')[1];
+        selectedTeamIds = Object.values(TEAMS)
+          .filter(t => t.div === targetDiv)
+          .sort((a, b) => a.overall - b.overall)
+          .map(t => t.id);
+        selectEl.value = "";
+        refreshApp();
+        return;
+      }
+
+      toggleTeam(val);
+      selectEl.value = "";
+    }
+
+    function handleSearchInput() {
+      const query = document.getElementById('teamSearchInput').value.trim().toLowerCase();
+      const divFilter = document.getElementById('divisionFilter').value;
+      const menu = document.getElementById('searchResultsMenu');
+
+      const matches = Object.values(TEAMS).filter(t => {
+        if (divFilter !== 'ALL' && t.div !== divFilter) return false;
+        return t.name.toLowerCase().includes(query) ||
+               t.fullName.toLowerCase().includes(query) ||
+               t.seed.toLowerCase().includes(query);
+      }).sort((a, b) => a.overall - b.overall);
+
+      if (matches.length === 0) {
+        menu.innerHTML = `<div class="p-2.5 text-xs text-slate-500">No matching teams found.</div>`;
+      } else {
+        menu.innerHTML = matches.map(t => {
+          const isSelected = selectedTeamIds.includes(t.id);
+          return `
+            <button
+              type="button"
+              onclick="toggleTeam('${t.id}'); hideSearchResults();"
+              class="w-full px-3 py-2 text-left text-xs hover:bg-blue-50 flex items-center justify-between transition"
+            >
+              <div class="flex items-center gap-2">
+                ${getTeamBadgeHTML(t.id, "w-7 h-7")}
+                <div>
+                  <div class="font-bold text-slate-900">${t.fullName}</div>
+                  <div class="text-[10px] text-slate-500">${t.div} #${t.overall} Overall • Pool ${t.seed}</div>
+                </div>
+              </div>
+              <span class="px-2 py-0.5 rounded font-bold text-[10px] ${isSelected ? 'bg-red-100 text-red-700' : 'bg-blue-100 text-blue-800'}">
+                ${isSelected ? 'Remove' : '+ Add'}
+              </span>
+            </button>
+          `;
+        }).join('');
+      }
+      menu.classList.remove('hidden');
+    }
+
+    function showSearchResults() {
+      handleSearchInput();
+    }
+
+    function hideSearchResults() {
+      document.getElementById('searchResultsMenu').classList.add('hidden');
+      document.getElementById('teamSearchInput').value = '';
+    }
+
+    document.addEventListener('click', (e) => {
+      const input = document.getElementById('teamSearchInput');
+      const menu = document.getElementById('searchResultsMenu');
+      if (input && menu && !input.contains(e.target) && !menu.contains(e.target)) {
+        menu.classList.add('hidden');
+      }
+    });
+
+    function toggleTeam(teamId) {
+      if (selectedTeamIds.includes(teamId)) {
+        selectedTeamIds = selectedTeamIds.filter(id => id !== teamId);
+      } else {
+        selectedTeamIds.push(teamId);
+      }
+      refreshApp();
+    }
+
+    function removeTeam(teamId) {
+      selectedTeamIds = selectedTeamIds.filter(id => id !== teamId);
+      refreshApp();
+    }
+
+    function loadMockupPreset() {
+      selectedTeamIds = [...MOCKUP_PRESET_TEAMS];
+      refreshApp();
+    }
+
+    function clearAllTeams() {
+      selectedTeamIds = [];
+      refreshApp();
+    }
+
+    // ============================================================================
+    // 10. GAME MATCHUP POPUP MODAL (ON CLICK / TAP OF ANY FIELD OR TEAM)
+    // ============================================================================
+    function openGamePopup(roundNum, fieldNum) {
+      const dayData = SCHEDULES[currentDay];
+      const roundObj = dayData.rounds.find(r => r.roundNum === roundNum);
+      if (!roundObj) return;
+
+      const match = roundObj.games.find(g => g.field === fieldNum);
+      document.getElementById('popupRoundLabel').textContent = roundObj.label;
+
+      let fieldSub = `Field ${fieldNum}`;
+      if ([1, 2, 10, 11].includes(fieldNum)) {
+        fieldSub += ' (Field Pass)';
+      } else if (fieldNum === 4) {
+        fieldSub += ' (Showcase)';
+      }
+      document.getElementById('popupFieldLabel').textContent = fieldSub;
+
+      const divBadgeEl = document.getElementById('popupDivisionBadge');
+      const contentEl = document.getElementById('popupTeamsContent');
+
+      if (!match) {
+        divBadgeEl.innerHTML = '';
+        contentEl.innerHTML = `
+          <div class="py-6 text-center text-slate-600 font-semibold text-base">
+            No game scheduled on Field ${fieldNum} during this round.
+          </div>
+        `;
+      } else {
+        const team1 = TEAMS[match.t1];
+        const team2 = TEAMS[match.t2];
+        const divNames = { W: "Women's Division", M: "Men's Division", X: "Mixed Division" };
+        const divColors = {
+          W: "bg-purple-100 text-purple-900 border-purple-300",
+          M: "bg-sky-100 text-sky-900 border-sky-300",
+          X: "bg-amber-100 text-amber-900 border-amber-300"
+        };
+
+        const isPreqPopup = currentDay === 'saturday_preq';
+        const poolOrPreqText = isPreqPopup ? 'Prequarters' : `Pool ${team1.pool}`;
+        divBadgeEl.innerHTML = `
+          <span class="inline-block px-3 py-1 rounded-full text-xs font-extrabold border ${divColors[team1.div] || 'bg-slate-100 text-slate-800'}">
+            ${divNames[team1.div] || team1.div} • ${poolOrPreqText}
+          </span>
+        `;
+
+        contentEl.innerHTML = `
+          <!-- Team 1 Card -->
+          <div class="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 border border-slate-200">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-lg border border-slate-200 p-1 flex items-center justify-center shrink-0 shadow-xs">
+              ${getTeamBadgeHTML(team1.id, "w-12 h-12 sm:w-14 sm:h-14")}
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="text-xl sm:text-2xl font-black text-slate-900 leading-tight break-words">
+                ${team1.name}
+              </div>
+              <div class="text-xs sm:text-sm font-semibold text-slate-600 mt-0.5">
+                ${team1.fullName}
+              </div>
+              <div class="text-xs font-bold text-slate-500 mt-0.5">
+                Seed ${team1.seed} (#${team1.overall} Overall)
+              </div>
+            </div>
+          </div>
+
+          <!-- VS Divider -->
+          <div class="flex items-center justify-center">
+            <span class="px-3 py-0.5 rounded-full bg-slate-200 text-slate-700 font-black text-xs tracking-widest uppercase">
+              VS
+            </span>
+          </div>
+
+          <!-- Team 2 Card -->
+          <div class="flex items-center gap-3.5 p-3 rounded-xl bg-slate-50 border border-slate-200">
+            <div class="w-14 h-14 sm:w-16 sm:h-16 bg-white rounded-lg border border-slate-200 p-1 flex items-center justify-center shrink-0 shadow-xs">
+              ${getTeamBadgeHTML(team2.id, "w-12 h-12 sm:w-14 sm:h-14")}
+            </div>
+            <div class="flex-1 min-w-0">
+              <div class="text-xl sm:text-2xl font-black text-slate-900 leading-tight break-words">
+                ${team2.name}
+              </div>
+              <div class="text-xs sm:text-sm font-semibold text-slate-600 mt-0.5">
+                ${team2.fullName}
+              </div>
+              <div class="text-xs font-bold text-slate-500 mt-0.5">
+                Seed ${team2.seed} (#${team2.overall} Overall)
+              </div>
+            </div>
+          </div>
+        `;
+      }
+
+      document.getElementById('gamePopupModal').classList.remove('hidden');
+    }
+
+    function closeGamePopup() {
+      document.getElementById('gamePopupModal').classList.add('hidden');
+    }
+
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape') {
+        closeGamePopup();
+      }
+    });
+
+    function refreshApp() {
+      populateDropdown();
+      renderAllMaps();
+      renderSelectedTeamsSidebar();
+    }
+
+    window.addEventListener('DOMContentLoaded', () => {
+      switchDay('saturday_preq');
+    });
+  </script>
+</body>
+</html>
+    
+
